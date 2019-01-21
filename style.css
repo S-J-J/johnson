@@ -1,0 +1,46 @@
+:root {
+    /* colors */
+    --primary-background: #ffffff;
+    --secondary-background: #DEE0E2;
+    --primary-color: #37AB2E;
+    --secondary-color: #00823B;
+    --primary-text: #050505;
+    --primary-text-invert: #ffffff;
+    --secondary-text: grey;
+    --divider-color: #000000;
+    --nav-color: #000000;
+
+    /* modular typography baseline: 1em */
+    --step-up-5: 2.2em;
+    --step-up-4: 1.7511em;
+    --step-up-3: 1.5157em;
+    --step-up-2: 1.3195em;
+    --step-up-1: 1.1487em;
+    --step-up-0: 1em;
+  }
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  @media (max-width: 600px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    html {
+      font-size: 17px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    html {
+      font-size: 18px;
+    }
+  }
