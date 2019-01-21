@@ -2,7 +2,7 @@
     /* colors */
     --primary-background: #ffffff;
     --secondary-background: #DEE0E2;
-    --primary-color: #37AB2E;
+    --primary-color: #3455DB;
     --secondary-color: #00823B;
     --primary-text: #050505;
     --primary-text-invert: #ffffff;
@@ -24,6 +24,7 @@
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
   }
 
 
@@ -44,3 +45,26 @@
       font-size: 18px;
     }
   }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 291px;
+    margin: 0;
+    padding: 2em;
+    color: var(--primary-text-invert);
+}
+
+section {
+    padding: 2em;
+}
+
+article {
+    background-color: grey;
+    padding: 1em;
+}
+
+button {
+    padding: 1em;
+}
