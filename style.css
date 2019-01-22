@@ -123,3 +123,8 @@ main {
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
   }
+
+  .card_image img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
