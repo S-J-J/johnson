@@ -115,8 +115,15 @@ article h2 {
 article:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.021), 0 17px 50px 0 rgba(0,0,0,0.29);
     transform: scale(1.03);
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
+    -webkit-transition: 024s ease;
+    transition: 0.2s ease;
+}
+
+article:active {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.021), 0 17px 50px 0 rgba(0,0,0,0.29);
+    transform: scale(1);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
 
 button {
