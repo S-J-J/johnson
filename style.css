@@ -18,7 +18,7 @@
     --step-up-2: 1.3195em;
     --step-up-1: 1.1487em;
     --step-up-0: 1em;
-    --step-down-0: 0.75em;
+    --step-down-0: 0.7em;
   }
 
 * {
@@ -137,6 +137,8 @@ footer div:hover {
 
 .social {
   font-size: var(--step-down-0);
+  color: var(--primary-text);
+  text-decoration: none;
 }
 
 .footer__social {
