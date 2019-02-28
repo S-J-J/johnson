@@ -118,7 +118,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
-    height: 4em;
+    height: 6em;
     background-color: white;
 }
 
