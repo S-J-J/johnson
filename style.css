@@ -64,7 +64,7 @@ header {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1em;
     align-items: center;
-    background-color: #00823B;
+    background-color: #3150cc;
     padding: 1em;
 }
 
@@ -78,7 +78,7 @@ header {
 
 .header__title {
     grid-column-end: span 11;
-    background-color: aqua;
+    color: var(--primary-text-invert);
 }
 
 main {
@@ -179,4 +179,5 @@ article {
 footer {
   text-align: center;
   font-size: var(--step-down-0);
+  padding: 2em;
 }
