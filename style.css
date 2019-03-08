@@ -4,10 +4,11 @@
     --secondary-background: #DEE0E2;
     --primary-color: rgb(27, 27, 27);
     --secondary-color: #00823B;
-    --primary-button: rgb(31, 31, 31);
+    --interactive-color: rgb(0, 122, 255);  
+    --primary-button: rgb(241, 241, 241);
     --primary-text: #050505;
     --primary-text-invert: #ffffff;
-    --secondary-text: grey;
+    --secondary-text: rgb(126, 126, 126);
     --divider-color: #c4c4c4;
     --nav-color: #000000;
 
@@ -84,7 +85,7 @@ header {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
-    grid-gap: 1.5em;
+    grid-gap: 2em;
     justify-content: space-around;
     align-items: center;
     padding-left: 1em;
@@ -111,9 +112,18 @@ main {
 }
 
 article {
-  background-color: black;
+  background-color: var(--primary-background);
   display: grid;
-  border-radius: 2em;
+  border-radius: 1em;
+  -webkit-box-shadow: 1px 5px 70px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 5px 70px 0px rgba(0,0,0,0.2);
+box-shadow: 1px 5px 70px 0px rgba(0,0,0,0.2);
+transition: all .2s ease-in-out;
+}
+
+article:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.02);
   -webkit-box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
 box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
@@ -123,20 +133,10 @@ box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
   overflow: hidden;
   object-fit: cover;
   width: auto;
-  height:400px;
+  height:450px;
   background-color: var(--secondary-background);
-  border-top-left-radius: 2em; 
-  border-top-right-radius: 2em;
-}
-
-.article__img-mask::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
-  margin-top: -150px;
-  height: 150px;
-  width: 100%;
-  content: '';
+  border-top-left-radius: 1em; 
+  border-top-right-radius: 1em;
 }
 
 .article__img-mask__image {
@@ -187,21 +187,43 @@ box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
 }
 
 .article__content {
-  color: var(--primary-text-invert); 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: var(--primary-text); 
   padding: 1em;
+  align-items: center;
 }
 
-.button {
+.article__content__info {
+  grid-column-start: span 3;
+}
+
+.article__content__button {
+  grid-column-start: span 1;
+  justify-self: center;
+}
+
+.article__content-label {
+  color: var(--secondary-text); 
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.article__content-description {
+  color: var(--secondary-text); 
+}
+
+.button-primary {
   padding: 0.5em 1em 0.5em 1em;
   font-size: var(--step-up-0);
   background-color: var(--primary-button);
-  color: var(--primary-text-invert);
+  color: var(--interactive-color);
   border: none;
   cursor: pointer;
-  margin-top: 0.5em;
   border-radius: 2em;
+  text-decoration: none;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 footer {
