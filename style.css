@@ -70,6 +70,7 @@ header {
 }
 
 .header__avatar {
+    align-self: flex-start;
     justify-items: end;
     width: 100px;
     height: 100px;
@@ -240,6 +241,12 @@ box-shadow: 1px 5px 80px 0px rgba(0,0,0,0.3);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: rgb(221, 221, 221);
+  transition: all .2s ease-in-out;
 }
 
 footer {
