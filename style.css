@@ -254,7 +254,3 @@ footer {
   font-size: var(--step-down-0);
   padding: 2em;
 }
-
-.js-replace {
-  color:var(--interactive-color);
-}
