@@ -274,6 +274,7 @@ ul.breadcrumb {
   list-style: none;
   display: flex;
   padding: 0;
+  padding-bottom: 1em;
 }
 
 /* Display list items side by side */
@@ -303,6 +304,24 @@ ul.breadcrumb li a:hover {
 
 
 
+.header-hero {
+  width: 100%;
+  max-width: 1440px;
+  height: 617px;
+  background-color: darkgoldenrod;
+}
+
+.section__goal {
+  background-color: lightcoral;
+  border: none;
+}
+
+.section__hero {
+  overflow: hidden;
+  object-fit: cover;
+  width: auto;
+  height:450px;
+}
 
 
 
