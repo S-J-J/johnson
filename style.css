@@ -60,10 +60,22 @@ html, body {
   color: var(--primary-color);
 }
 
+.container {
+  background-color: none;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: auto;
-  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1em;
+  }
 }
 
 nav {
@@ -78,8 +90,14 @@ nav {
 .nav__main{
   display: inline-flex;
   align-items: center;
-  padding: 8px;
+  padding: 1em;
   justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .nav__main {
+    padding-left: 2em;
+  }
 }
 
 .nav__logo {
@@ -159,12 +177,18 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
-  width: 49%;
   text-decoration: none;
+}
 
+@media (min-width: 1024px) {
+  .portfolio-item {
+    width: 49%;
+  }
 }
 
 .portfolio-meta {
@@ -176,7 +200,6 @@ section {
 }
 
 .portfolio-item__header, .portfolio-item__header img {
-  height: 470px;
   background-color: #F9F9F9;
   border-radius: 4px;
   object-fit: cover;
