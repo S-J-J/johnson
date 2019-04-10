@@ -183,6 +183,7 @@ section {
 
 .portfolio-item {
   text-decoration: none;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 1024px) {
