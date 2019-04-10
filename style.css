@@ -118,7 +118,12 @@ nav ul, nav ul a {
   list-style: none;
   font-size: var(--step-down-1);
   color: var(--primary-color);
-  margin-left: 4em;
+}
+
+@media (min-width: 600px) {
+  .nav ul, nav ul a {
+    margin-left: 2em;
+  }
 }
 
 nav ul li a {
