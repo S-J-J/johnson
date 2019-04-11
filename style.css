@@ -162,10 +162,6 @@ nav ul li a:hover:before {
   transform: scaleX(1);
 }
 
-nav ul a:active {
-  color: red;
-}
-
 header {
   padding: 1em;
   max-width: 1440px;
