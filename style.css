@@ -170,7 +170,6 @@ header {
   padding: 1em;
   max-width: 1440px;
   margin: auto;
-  width: 100%;
 }
 
 @media (max-width: 600px) {
