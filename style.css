@@ -164,6 +164,11 @@ header {
   padding-top: 3em;
 }
 
+.quote {
+  border-left: solid 4px black;
+  padding-left: 0.5em;
+}
+
 h1 {
   font-size: var(--step-up-5);
   font-weight: 700;
