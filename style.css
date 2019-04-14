@@ -199,6 +199,7 @@ h2 {
   font-size: var(--step-up-2);
   font-weight: 600;
   padding-bottom: 0.5em;
+  padding-top: 1em;
 }
 
 h3 {
