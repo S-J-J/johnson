@@ -69,7 +69,10 @@ html, body {
   margin: auto;
   padding-left: 2em;
   padding-right: 2em;
+}
 
+.page {
+  padding-top: 64px;
 }
 
 @media (max-width: 600px) {
@@ -86,6 +89,12 @@ nav {
   -webkit-box-shadow: 0 0px 2px 2px rgba(153, 153, 153, 0.15);
     -moz-box-shadow: 0 0px 2px 2px rgba(153, 153, 153, 0.15);
     box-shadow: 0 0px 2px 2px rgba(153, 153, 153, 0.15);
+}
+
+.nav-container {
+  position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav__main{
@@ -171,6 +180,15 @@ nav ul li a:hover:before {
   bottom: -8px;
   left: 0;
   background-color: var(--interactive-color);
+}
+
+.header--hero {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  max-width: none;
+  background-color: var(--secondary-background);
+  object-fit: cover;
 }
 
 header {
