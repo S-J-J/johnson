@@ -191,6 +191,24 @@ nav ul li a:hover:before {
   object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .header--hero {
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .header--hero {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header--hero {
+    font-size: 18px;
+  }
+}
+
 header {
   padding: 1em;
   max-width: 1440px;
