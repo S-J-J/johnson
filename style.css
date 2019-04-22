@@ -128,6 +128,7 @@ nav {
 .nav--return {
   position: absolute;
   background-color: var(--primary-background);
+  font-size: var(--step-down-1);
   padding: 0.8em;
   margin-top: 1em;
   margin-left: 1em;
