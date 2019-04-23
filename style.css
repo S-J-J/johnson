@@ -10,7 +10,7 @@
     --primary-text: #050505;
     --primary-text-invert: #ffffff;
     --secondary-text: rgb(126, 126, 126);
-    --divider-color: #c4c4c4;
+    --divider-color: #cfcfcf;
     --nav-color: #000000;
     --meta: rgb(144, 144, 144);
     --body: rgb(119, 119, 119);
@@ -131,28 +131,13 @@ nav {
   margin-top: 1em;
   margin-left: 1em;
   border-radius: 4px;
+  border: 1px solid var(--divider-color);
 }
 
-.nav--return:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0px;
-  left: 0;
-  background-color: var(--interactive-color);
-  color: black;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-.nav--return:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+.nav--return:hover {
+background-color: var(--hover-background);
+-webkit-transition: all 0.2s ease-in-out 0s;
+transition: all 0.2s ease-in-out 0s;
 }
 
 .nav--next {
@@ -160,6 +145,18 @@ nav {
   justify-content: flex-end;
 }
 
+.nav__return {
+  display: flex;
+  align-items: center;
+}
+
+.nav__return-icon {
+  margin-right: 0.5em;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgODYuMDAxIDg2LjAwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODYuMDAxIDg2LjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzAzMDEwNDsiIGQ9Ik02NC45OTgsODAuMDk1YzEuMzM4LDEuMzUyLDEuMzM4LDMuNTQxLDAsNC44OTNjLTEuMzM2LDEuMzUtMy41MDYsMS4zNTItNC44NDQsMGwtMzkuMTUxLTM5LjU0DQoJCWMtMS4zMzgtMS4zNTItMS4zMzgtMy41NDMsMC00Ljg5NWwzOS4xNS0zOS41MzljMS4zMzgtMS4zNTIsMy41MDYtMS4zNTIsNC44NDQsMEM2Ni4zMzUsMi4zNjYsNjYuMzM1LDQuNTU2LDY1LDUuOTA3DQoJCUwyOS4yOTQsNDMuMDAxTDY0Ljk5OCw4MC4wOTV6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==");
+  width: 16px;
+  height: 16px;
+  border: none;
+}
 
 a {
   text-decoration: none;
