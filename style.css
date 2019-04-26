@@ -77,6 +77,13 @@ html, body {
   }
 }
 
+@media (min-width: 600px) {
+  .page {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
 nav {
   display: flex;
   background-color: var(--primary-background);
@@ -100,6 +107,13 @@ nav {
   max-width: 1440px;
   width: 100%;
   margin: auto;
+}
+
+@media (min-width: 600px) {
+  .nav__main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 .nav__logo {
@@ -416,4 +430,23 @@ footer {
 
 .social__item-label {
   padding-top: 0.5em;
+}
+
+.two-col {
+  display: flex;
+  flex-direction:row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin:0 -15px;
+}
+
+.two-col > div {
+    flex: 1;
+    padding:0 15px;
+}
+
+@media (max-width: 600px) {
+  .two-col > div {
+    flex-basis: auto;
+  }
 }
