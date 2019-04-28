@@ -450,3 +450,7 @@ footer {
     flex-basis: auto;
   }
 }
+
+.img--retina {
+  transform: scale(0.5);
+}
