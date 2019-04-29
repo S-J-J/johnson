@@ -454,3 +454,8 @@ footer {
 .img--retina {
   transform: scale(0.5);
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
