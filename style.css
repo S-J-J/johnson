@@ -278,7 +278,6 @@ h2 {
   font-size: var(--step-up-2);
   font-weight: 600;
   padding-bottom: 0.5em;
-  padding-top: 1em;
 }
 
 h3 {
@@ -433,6 +432,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: var(--space-x2);
+  margin-bottom: var(--space-x2);
 }
 
 
