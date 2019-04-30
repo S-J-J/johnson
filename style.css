@@ -451,3 +451,7 @@ footer {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   }
+
+.button-label {
+  padding: var(--space-x1);
+}
