@@ -399,10 +399,6 @@ box-shadow: inset 0px 0px 0px 2px var(--interactive-color);
   flex-direction: column; 
 }
 
-.social__item:hover, .social__item div:hover {
-  background-color: var(--hover-background);
-}
-
 footer {
   padding-top: 1em;
   padding-bottom: 6em;
@@ -467,12 +463,9 @@ footer {
 }
 
 .button:hover {
-  background-color: var(--hover-background);
   webkit-box-shadow: inset 0px 0px 0px 2px var(--interactive-color);
   -moz-box-shadow: inset 0px 0px 0px 2px var(--interactive-color);
   box-shadow: inset 0px 0px 0px 2px var(--interactive-color);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
   }
 
 .button-label {
