@@ -39,48 +39,208 @@
             <a href="https://sjohnson.co.uk">Stephen Johnson</a></div>
         <ul>
           <li><a href="https://sjohnson.co.uk" aria-label="Portfolio">Portfolio</a></li>
-          <li><a href="../about.html" aria-label="About">About</a></li>
+          <li><a href="https://sjohnson.co.uk/about.html" aria-label="About">About</a></li>
         </ul>
         </div>
     </nav>
 
     <div class="page">
+            <a href="https://sjohnson.co.uk" class="button button--nav">
+                <div class="icon-sm icon-chevron-left"></div>
+                <div class="button-label">Back to portfolio</div>
+            </a>
 
-
-
-<section class="two-col">
-    <div>
-        <img src="../img/portfolio_cookwell.png" width="100%">
-    </div>
-    <div>
         <header>
-                <div class="portfolio-meta">Service, retail, e-commerce</div>
-            <h1>Waitrose cookwell</h1>
-            <div class="portfolio__description-body">A recipe meal-box from Waitrose</div>
-        </header>
+            <img src="../img/waitrose-cookwell-header.jpg" class="img__page-width-100">
+    </header>
+
+<section class="two-col section--inner">
+   
+    <div>
+
+                <div class="portfolio-meta">Service, events, experiences</div>
+            <h1>Waitrose Wine Tasting at Home</h1>
+            <div class="portfolio__description-body">Personal wine tasting at home</div>
+      
             <h2>Client</h2>
-            <p>Waitrose & Partners</p>
+            <p>Waitrose & Partners, John Lewis Partnership</p>
             <h2>Tasks</h2>
-            <p>User research, Analytics and data (Google Analytics, Session Cam), Consolidating insight, Usability optimising, Wireframing, Prototyping, Design system creation, Responsive web design, UI validation testing, Acceptance criteria creation, Design QA on dev environment, Project mangement using Trello.
-                </p>
+            <ul class="meta">
+                <li class="meta-item">User research</li>
+                <li class="meta-item">Analytics</li>
+                <li class="meta-item">Wireframing</li>
+                <li class="meta-item">Prototyping</li>
+                <li class="meta-item">Design system creation</li>
+                <li class="meta-item">Responsive design</li>
+                <li class="meta-item">Acceptance Criteria creation</li>
+                <li class="meta-item">Design QA & testing</li>
+            </ul>     
     </div>
 </section>
 
-<section class="four-col">
+<section class="two-col section--inner">
     <div>
-        <p>64% conversion</p>
+        <h2>Background</h2>
     </div>
     <div>
-        <p>64% conversion</p>
+        <p>Waitrose Wine Tasting At Home is a new experience service launched by Waitrose. Compared to a traditional wine tasting, this is a very personal experience in which a specialist brings the wine tasting to your home. </p>
     </div>
-    <div>
-        <p>64% conversion</p>
-    </div>
-    <div>
-        <p>64% conversion</p>
-    </div>
-    
 </section>
+
+
+<section class="two-col section--inner">
+    <div>
+        <h2>Existing data, analytics and problem</h2>
+    </div>
+    <div>
+        <p>Before redesigning, we improved analytics on how the existing website was performing by implementing tracking tags on enquiry buttons as events. From one month, we discovered behavioural data when combined with user feedback, highlighted problematic areas. In particular, the conversion between users attempting to submit an enquiry form to success. 
+        </p>
+
+        <figure>
+            <img src="../img/data-events.jpg" alt="Data" class="img__page-width-80">
+            <figcaption>Event tracking goal funnel from Google Analytics. Scenario: making a booking enquiry</figcaption>
+        </figure>
+
+
+        <div class="container__statistic">
+            <div class="container__statistic__item">
+                <div class="container__statistic__item--top"> 
+                    <h3>44%</h3>
+                    <p class="statistic-description">Weak conversion on mobile devices</p>
+                    <p class="statistic-date">Success Submit, Februrary 2019</p>
+
+                </div>
+                <div class="container__statistic__item--bottom">
+                    <img src="../img/data-conversion-before-mobile.png" class="statistic-image">
+              </div>
+            </div>
+
+            <div class="container__statistic__item">
+                <div class="container__statistic__item--top"> 
+                    <h3>47%</h3>
+                    <p class="statistic-description">Weak conversion from Returning Users</p>
+                    <p class="statistic-date">Success Submit, Februrary 2019</p>
+
+                </div>
+                <div class="container__statistic__item--bottom">
+                    <img src="../img/data-conversion-before-returning.png" class="statistic-image">
+              </div>
+            </div>
+        </div>
+
+        <p>The previous website was not responsively optimised for mobile devices. Form components did not follow usability standards and accepted design patterns. From analytics, we saw over 76% of users were on mobile devices. The difficulties by users were also expressed in survey feedback: </p>
+        <blockquote>"I would like to make an enquiry, but the mobile form is very tricky. There was little indication the enquiry had been submitted to you." <br>- Customer feedback</blockquote>
+    </div>
+</section>
+
+<section class="two-col section--inner">
+        <div>
+            <h2>Identifying user and business goals</h2>
+        </div>
+        <div>
+            <p>The primary function of the online application was for users to select the tasting experience they were interested in, fill-in and submit a booking form. Together with the Product Owner team, we identified two main goals:</p>
+                 <ol>
+                <li>Improve the form usability and mobile experience to increase the booking enquiry conversion, given most users are on mobile</li>
+                <li>Improve the through-traffic to the gift and experience page, from the homepage, to encourage gift purchases</li>
+            </ol>
+            <figure>
+                <img src="../img/waitrose-wtah-flow.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Mapped existing user flow for making a booking enquiry or gifting</figcaption>
+            </figure>
+  
+
+       
+
+        </div>
+    </section>
+
+    <section class="two-col section--inner">
+        <div>
+            <h2>Low fidelity wireframing</h2>
+        </div>
+        <div>
+            <p>On the homepage, the content hierarchy was improved for users to infer the type of website they were visiting and their available options. Links to the categories - experiences and gifts were made prominent above the viewport fold. Previously these were hidden in an expanded navigation drawer. </p>
+             
+            <figure>
+                <img src="../img/waitrose-winetasting-lowfi.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Home page Low-fi interface designs from usability studies</figcaption>
+            </figure>
+            <p>The tasting experience booking page was simplified to give users information they could easily scan, read and compare their options. By using reusable card components, future experiences could be added or removed. An accordion component on the page functioned as a snippet of faqs, to keep users on the page and informed.</p>
+            <p>The form was simplified to remove duplicate input fields that added friction to the experience. For example, instead of 4 inputs, “Title” “First Name” “Middle name” and “Surname”, these were simply changed to 1 input “Full name”. Instead of using a modal overlay that had significant mobile scrolling usability issues, the form was embedded on the viewport. 
+            </p>
+            <figure>
+                <img src="../img/waitrose-winetasting-lowfi-packages.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Experience page Low-fi interface designs from usability studies</figcaption>
+            </figure>
+
+
+        </div>
+    </section>
+
+
+    <section class="two-col section--inner">
+        <div>
+            <h2>Design system for consistency</h2>
+        </div>
+        <div>
+            <p>To create interface consistency, and speed up development time, I worked on creating a design system. With reusable components, typography, colours and styles.
+            </p>
+        
+            <figure>
+                <img src="../img/waitrose-winetasting-designsystem.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Snippet of Design System of reusable components</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+
+    <section class="two-col section--inner">
+        <div>
+            <h2>Outcome and performance</h2>
+        </div>
+        <div>
+            <p>One month after pushing the new designs live, we repeated analytics and heat mapping. The results were positive and booking conversions had improved significantly on mobile.  Through-traffic had improved from the homepage to the experience and gift page. </p>
+            <figure>
+                <img src="../img/waitrose-winetasting-data.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>SessionCam click and attention heatmaps</figcaption>
+            </figure>
+            <figure>
+                <img src="../img/waitrose-wine-tasting.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Waitrose Wine Tasting at Home - homepage, experience, gift and help</figcaption>
+            </figure>
+            <figure>
+                <img src="../img/waitrose-winetasting-laptop.jpg" alt="Data" class="img__page-width-80">
+                <figcaption>Waitrose Wine Tasting at Home - homepage, experience, gift and help</figcaption>
+            </figure>
+
+        <div class="container__statistic">
+            <div class="container__statistic__item">
+                <div class="container__statistic__item--top"> 
+                    <h3>+29%</h3>
+                    <p class="statistic-description">Increase in conversion on mobile devices</p>
+                    <p class="statistic-date">Success Submit, May 2019</p>
+                </div>
+                <div class="container__statistic__item--bottom">
+                    <img src="../img/data-conversion-after-mobile.png" class="statistic-image">
+              </div>
+            </div>
+
+            <div class="container__statistic__item">
+                <div class="container__statistic__item--top"> 
+                    <h3>+22%</h3>
+                    <p class="statistic-description">Increase in conversion from Returning Users</p>
+                    <p class="statistic-date">Success Submit, May 2019</p>
+                </div>
+                <div class="container__statistic__item--bottom">
+                    <img src="../img/data-conversion-after-returning.png" class="statistic-image">
+              </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -89,7 +249,7 @@
         <div class="icon-sm icon-chevron-left"></div>
         <div class="button-label">Back to portfolio</div>
 </a>
-<a href="waitrose-wine-tasting.html" class="button">
+<a href="waitrose-cookwell.html" class="button">
         <div class="button-label">Next project</div>
         <div class="icon-sm icon-chevron-right"></div>
 </a>
