@@ -251,6 +251,7 @@ blockquote {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  margin-bottom: var(--space-x1);
 }
 
 .meta-item {
@@ -584,10 +585,6 @@ footer {
 .statistic-image {
   width: 100%;
   display: flex;
-}
-
-.statistic-number {
-
 }
 
 .statistic-description {
