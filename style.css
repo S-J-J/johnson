@@ -359,7 +359,7 @@ h1 {
 h2 {
   font-size: var(--step-up-2);
   font-weight: 600;
-  padding-bottom: var(--space-x1);
+  padding-bottom: var(--space-x0);
 }
 
 h3 {
@@ -378,7 +378,7 @@ p {
 
 section {
   display: flex;
-  padding-bottom: var(--space-x4);
+  padding-bottom: var(--space-x2);
 }
 
 .section--inner {
@@ -598,4 +598,11 @@ footer {
 .statistic-date {
   font-size: var(--step-down-2);
   margin: 0;
+}
+
+.video {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  width: 100%;
 }
