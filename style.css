@@ -396,7 +396,7 @@ section {
 
 .portfolio-item {
   text-decoration: none;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 .portfolio-item__header img:hover {
